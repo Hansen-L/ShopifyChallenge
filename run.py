@@ -12,12 +12,13 @@ app = create_app()
 def upload():
     form = UploadPictureForm()
     if form.validate_on_submit():
-        if form.picture.data:
-            picture_file = save_picture(form.picture.data)  # Saves the picture and returns the filepath
-        image = Images(image_file=picture_file)
-        db.session.add(image)
-        db.session.commit()
-        flash('Images uploaded!', 'success')
+        for picture in form.pictures.data:
+            picture_file = save_picture(picture)  # Saves the picture and returns the filepath
+            image = Images(image_file=picture_file)
+            db.session.add(image)
+            db.session.commit()
+        if form.pictures.data:
+            flash('Images uploaded!', 'success')
     return render_template('upload.html', title='Upload Images', form=form)
 # @app.route("/", methods=['POST'])
 
