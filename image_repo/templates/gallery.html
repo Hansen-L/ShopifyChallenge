@@ -18,6 +18,7 @@
                             <a href="{{'static/images/' + image.image_file }}" data-rel="lightbox" class="fa fa-arrows-alt"></a>
                         </div>
                     </div>
+                    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('delete', file_id=image.id) }}">Delete</a>
                 </div>
                 {% endfor %}
             </div>

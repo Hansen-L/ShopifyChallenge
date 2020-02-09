@@ -3,9 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="1b7e99aa-c900-4e2a-9eb3-e4a153e6369a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_repo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_repo/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image_repo/images.db" beforeDir="false" afterPath="$PROJECT_DIR$/image_repo/images.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_repo/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/image_repo/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/1293d36bfada1cd2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/18c177badf830c6f.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/2141abca651b98b6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/26335d5bbec9fa01.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/2bccd633d4a1e272.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/2e954371f03d058f.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/3e9e47c651c4166b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/5a86227be6e1bb5a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/5b6ad978c2d9abbb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/5e7186d78a7cb47b.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/651703e4f5702114.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/805b4b3dd9214eab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/87c15ef854f248b8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/8b7eab3d659e14a0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/9739bf1bedf24457.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/9813c1647a569fac.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/9cd0593b2f94d824.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/af2994345554c8a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/b77e2c386ba85c59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/bdbb2899f6e456a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/c6a2e5d248669359.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/c7a384eaa8eb5532.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/df56c136d77d166b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/static/images/e01b1f300e0bbafc.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/image_repo/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_repo/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_repo/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +132,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581119422107</updated>
-      <workItem from="1581119423278" duration="15511000" />
+      <workItem from="1581119423278" duration="17122000" />
+      <workItem from="1581264978482" duration="2438000" />
     </task>
     <servers />
   </component>
@@ -120,13 +145,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ShopifyChallenge$run.coverage" NAME="run Coverage Results" MODIFIED="1581221475201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ShopifyChallenge$run.coverage" NAME="run Coverage Results" MODIFIED="1581283872608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
