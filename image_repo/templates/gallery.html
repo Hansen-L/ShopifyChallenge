@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="content portfolio" id="menu-3">
+      <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Picture Gallery</h1>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row templatemo_portfolio">
+                {% for image in images %}
+                <div class="col-md-4 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="{{'static/images/' + image.image_file }}" alt="gallery 1">
+                        <div class="overlay">
+                            <a href="{{'static/images/' + image.image_file }}" data-rel="lightbox" class="fa fa-arrows-alt"></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+      </div>
+    </div>
+
+{% endblock content %}
+
