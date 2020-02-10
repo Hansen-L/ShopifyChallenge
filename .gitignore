@@ -1,2 +1,5 @@
 /.idea
+.idea
+.idea/
 /image_repo/static/images
+/image_repo/__pycache__

@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    # SECRET_KEY = '78b81502f7e89045fe634e85d02f42c5'
+    SECRET_KEY = '78b81502f7e89045fe634e85d02f42c5'
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
     # MAIL_SERVER = 'smtp.gmail.com'
     # MAIL_PORT = 587
@@ -9,7 +9,7 @@ class Config:
     # MAIL_USERNAME = 'flaskblog12345@gmail.com111'
     # MAIL_PASSWORD = 'testerpw1'
 
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    # SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = 'sqlite:///images.db'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
