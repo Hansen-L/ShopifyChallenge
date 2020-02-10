@@ -27,7 +27,7 @@ def upload():
     return render_template('upload.html', title='Upload Images', form=form)
 
 
-@app.route("/gallery", methods=['GET','POST'])
+@app.route("/gallery", methods=['GET', 'POST'])
 def gallery():
     # To-do: Option between viewing your own pictures vs all available pictures
     images = Images.query.all()
