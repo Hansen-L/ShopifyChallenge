@@ -1,29 +1,33 @@
 {% extends "layout.html" %}
 {% block content %}
-
+<form method="POST">
     <div class="content portfolio" id="menu-3">
       <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h1>Picture Gallery</h1>
+                    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('delete_all') }}">Delete All</a>
+                    <input class="btn btn-secondary btn-sm mt-1 mb-1" type="submit" value="Delete Selection">
                 </div>
             </div>
             <div class="clear"></div>
             <div class="row templatemo_portfolio">
                 {% for image in images %}
-                <div class="col-md-4 col-sm-12">
-                    <div class="gallery-item">
-                        <img src="{{'static/images/' + image.image_file }}" alt="gallery 1">
-                        <div class="overlay">
-                            <a href="{{'static/images/' + image.image_file }}" data-rel="lightbox" class="fa fa-arrows-alt"></a>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="gallery-item">
+                            <img src="{{'static/images/' + image.image_file }}" alt="gallery 1">
+                            <div class="overlay">
+                                <a href="{{'static/images/' + image.image_file }}" data-rel="lightbox" class="fa fa-arrows-alt"></a>
+                            </div>
                         </div>
+                        <input type="checkbox" id="id_{{image.id}}" name="images" value="{{image.id}}">
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('delete', file_id=image.id) }}">Delete</a>
                     </div>
-                    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('delete', file_id=image.id) }}">Delete</a>
-                </div>
                 {% endfor %}
             </div>
       </div>
     </div>
+</form>
 
 {% endblock content %}
 

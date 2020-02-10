@@ -4,5 +4,5 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField, Multi
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 
 class UploadPictureForm(FlaskForm):#this registration inherits from flaskform
-    pictures = MultipleFileField('Select Pictures', validators=[FileAllowed(['jpg', 'png'])])
+    pictures = MultipleFileField('Select Pictures', validators=[FileAllowed(['jpg', 'png', 'zip'])])
     submit = SubmitField('Upload')
