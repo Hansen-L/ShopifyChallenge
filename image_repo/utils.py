@@ -7,7 +7,7 @@ from zipfile import ZipFile
 from shutil import rmtree
 from werkzeug.datastructures import FileStorage
 
-def save_picture(picture):
+def save_picture(picture, description):
     # Add a single picture to the server and the db. Commit the db after running this function.
     # Input is a FileStorage object
 
@@ -22,12 +22,12 @@ def save_picture(picture):
 
     i.save(picture_path)  # Save the image to the static/images directory on the server
 
-    image = Images(image_file=picture_fn)
+    image = Images(image_file=picture_fn, description=description)
     db.session.add(image)
     return picture_fn
 
 
-def save_pictures_zip(file):
+def save_pictures_zip(file, description):
     valid_images = [".jpg", ".png"]
     temp_path = os.path.join(current_app.root_path,'static/images/temp')
     zip_path = os.path.join(current_app.root_path, 'static/images', file.filename)
@@ -42,7 +42,7 @@ def save_pictures_zip(file):
         else:
             with open(os.path.join(temp_path, file_name), 'rb') as picture:
                 picture_fs = FileStorage(picture)  # Wrapping the file into the FileStorage class
-                save_picture(picture_fs)
+                save_picture(picture_fs, description)
 
     os.remove(zip_path)  # Getting rid of temp files
     print(rmtree(temp_path))

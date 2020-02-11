@@ -8,12 +8,19 @@
                     <h1>Picture Gallery</h1>
                     <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('delete_all') }}">Delete All</a>
                     <input class="btn btn-secondary btn-sm mt-1 mb-1" type="submit" value="Delete Selection">
+                    <div class="form-group">
+                        {{ form.search(class="form-control") }}
+                    </div>
                 </div>
+
             </div>
             <div class="clear"></div>
             <div class="row templatemo_portfolio">
                 {% for image in images %}
                     <div class="col-md-4 col-sm-12">
+                        <div style="margin-top:10px; margin-left:3px">
+                            {{ image.description }}
+                        </div>
                         <div class="gallery-item">
                             <img src="{{'static/images/' + image.image_file }}" alt="gallery 1">
                             <div class="overlay">
